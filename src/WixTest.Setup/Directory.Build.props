@@ -1,0 +1,8 @@
+<Project>
+    <!--
+    This has no effect
+    <PropertyGroup>
+        <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-x64</RuntimeIdentifier>
+    </PropertyGroup>
+    -->
+</Project>

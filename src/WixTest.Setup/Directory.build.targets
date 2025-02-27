@@ -1,0 +1,4 @@
+<Project>
+    <!-- Fix for VS 17.13, see https://github.com/firegiant/HeatWaveSupport/issues/73 -->
+    <Target Name="CollectSuggestedVisualStudioComponentIds" />
+</Project>
