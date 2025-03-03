@@ -3,7 +3,8 @@
     <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
 
     <Feature Id="Main">
-      <ComponentGroupRef Id="ExampleComponents" />
+      <Files Include="!(bindpath.WixTest.net9.0.win_x64)\**">
+      </Files>
     </Feature>
   </Package>
 </Wix>

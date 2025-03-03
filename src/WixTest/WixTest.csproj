@@ -4,12 +4,11 @@
         <TargetFrameworks>net9.0</TargetFrameworks>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
     </PropertyGroup>
     <ItemGroup>
-    </ItemGroup>
-    <ItemGroup>
-      <Compile Remove="publish\**" />
-      <EmbeddedResource Remove="publish\**" />
-      <None Remove="publish\**" />
+        <Compile Remove="publish\**" />
+        <EmbeddedResource Remove="publish\**" />
+        <None Remove="publish\**" />
     </ItemGroup>
 </Project>

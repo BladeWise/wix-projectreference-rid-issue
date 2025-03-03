@@ -1,8 +1,7 @@
 ﻿<Project Sdk="WixToolset.Sdk/5.0.2">
     <ItemGroup>
-        <ProjectReference Include="..\WixTest\WixTest.csproj" SetTargetFramework="TargetFramework=net9.0" GlobalPropertiesToRemove="SelfContained" Publish="true">
-            <!-- TargetFramework must be specified, using SetTargetFramework does not prevent a NETSDK1129 error, complaining about Publish target requiring a TargetFramework specified -->
-            <Properties>SelfContained=false;TargetFramework=net9.0;DebugSymbols=false;DebugType=None;RuntimeIdentifier=win-x64</Properties>
+        <ProjectReference Include="..\WixTest\WixTest.csproj" GlobalPropertiesToRemove="SelfContained" Publish="true" TargetFrameworks="net9.0" RuntimeIdentifiers="win-x64">
+            <Properties>SelfContained=false;TargetFramework=net9.0;DebugSymbols=false;DebugType=None</Properties>
         </ProjectReference>
     </ItemGroup>
 </Project>
